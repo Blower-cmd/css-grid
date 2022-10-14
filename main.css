@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: 
+    /*shape*/
+    linear-gradient(115deg, transparent 89%, #e8ddcb 0) -128px -96px,
+    linear-gradient(-115deg, transparent 89%, #cdb380 0) 22px -96px,
+    linear-gradient(-115deg, #036564 11%, transparent 0) -128px 54px,
+    linear-gradient(115deg, #033649 11%, transparent 0) 22px 54px,
+    
+    /*shape*/
+    linear-gradient(-25deg, #e8ddcb 11%, transparent 0) -128px -22px,
+    linear-gradient(25deg, transparent 89%, #cdb380 0) -128px 128px,
+    linear-gradient(25deg, #036564 11%, transparent 0) 22px -22px,
+    linear-gradient(-25deg, transparent 89%, #033649 0) 22px 128px,
+    /*shape*/
+    linear-gradient(-25deg, #e8ddcb 11%, transparent 0) -53px -96px,
+    linear-gradient(25deg, transparent 89%, #cdb380 0) -53px 54px,
+    linear-gradient(25deg, #036564 11%, transparent 0) 97px -96px,
+    linear-gradient(-25deg, transparent 89%, #033649 0) 97px 54px,
+    /*shape*/
+    linear-gradient(115deg, transparent 89%, #e8ddcb  0) -53px -21px,
+    linear-gradient(-115deg, #cdb380 11%, transparent 0) -53px 129px,
+    linear-gradient(-115deg, transparent 89%, #036564 0) 97px -21px,
+    linear-gradient(115deg, #033649 11%, transparent 0) 97px 129px;
+    
+  background-color: #fff;
+  background-size: 150px 150px;
+  background-repeat: repeat;
+  font-family: 'Manjari', sans-serif;
+}
+/*/header/*/
+.titlle h1{
+    color: aqua;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2.8em;
+}
+.contenedor{
+    background: white;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+.contenedor > .header,
+.contenedor > .conten,
+.contenedor > .lateral,
+.contenedor > .footer,
+.contenedor > div{
+    background: #fff;
+    padding: 20px;
+    border: 1px solid black;
+}
+.contenedor > .header, 
+.contenedor > .footer{
+    grid-column: 1/6; 
+    background-color: #1e272e;
+    color: #fff;
+}
+.contenedor > .conten{
+    grid-column: span 3;
+}
+.conten > .article{
+    background-color: #808e9b;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9;
+}
+.conten > .article h1,
+.conten > .article p { 
+    padding: 10px;
+    margin: 10px;
+}
+.contenedor > .lateral{
+    grid-column: span 2;
+    background: plum;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor > .publicaciones{
+    background: #2d3436;
+    color:#ffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.contenedor > .publicaciones:hover{ 
+    cursor:pointer;
+    color: black;
+    background: #ffff;
+}
+@media screen and (max-width: 768px){
+    .header {
+        text-align: center;
+
+    }
+    .contenedor.conten{
+        grid-column: 1/-1;
+
+    }
+    .contenedor.lateral{
+        grid-column: 1/6;
+    }
+    .contenedor.publicaciones{
+        grid-column: 1/-1;
+    }
+}
+
+
+
+
+
+
+
+
